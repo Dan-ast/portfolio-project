@@ -1,0 +1,77 @@
+:root {
+    --gradient: linear-gradient(68.6deg, rgb(252, 165, 241) 1.8%, rgb(181, 255, 255) 100.5%);
+    --links-color: #132743;
+}
+
+@media (max-width: 600px) {
+    .navigation-links a {
+        display: flex;
+        justify-content: space-around;
+        text-align: center;
+        margin-left: 10px;
+        font-size: 16px;
+    }
+}
+
+body {
+    background: var(--gradient);
+}
+
+h1,
+h2,
+h3 {
+    text-align: center;
+}
+
+h2 {
+margin-top: 60px;
+font-size: 35px;
+line-height: 45px;
+}
+
+h1 {
+    font-size: 50px;
+    line-height: 54px;
+}
+
+h3 {
+    font-size: 20px;
+    line-height: 35px;
+}
+
+.navigation-links {
+    display: flex;
+    margin-top: 40px;
+    justify-content: center;
+
+}
+
+.navigation-links a {
+    margin: 20px;
+    border-radius: 10px;
+    padding: 20px 15px;
+    text-decoration: none;
+    text-transform: capitalize;
+    padding: 20px 50px;
+}
+
+.contact-link,
+.about-me-link,
+.app-links {
+    border: 1px solid;
+    background-color: #132743;
+    color: #FFCBCB;
+    font-size: 20px;
+    cursor: pointer;
+    transition: all 500ms cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+a:hover {
+    background-color: transparent;
+    color: var(--links-color);
+}
+
+a:hover::after {
+    left: 120%;
+    transition: all 500ms cubic-bezier(0.19, 1, 0.22, 1);
+}       
