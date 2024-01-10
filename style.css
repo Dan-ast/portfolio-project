@@ -23,6 +23,10 @@ body {
     background: var(--gradient);
 }
 
+.hero-info {
+    margin: 100px 20px;
+}
+
 h1,
 h2,
 h3 {
